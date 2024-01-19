@@ -33,7 +33,7 @@ class ProductsService {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(this.products)
-      }, 5000)
+      }, 2000)
     })
     // return this.products
   }
