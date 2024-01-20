@@ -24,8 +24,11 @@ const options = {
 
 // app.use(cors({ origin: 'http://localhost:5500/'}))
 
-app.get('/', (req, res) => {
-  res.send('hola mi server en express')
+app.get('/api', (req, res) => {
+  res.send('hola mi server en express.')
+})
+app.get('/api/nueva-ruta', (req, res) => {
+  res.send('hola, esta es una nueva ruta.')
 })
 
 routerApi(app)
